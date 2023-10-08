@@ -1,4 +1,8 @@
 # Installing new kernel from source
+## Getting packages required for the work
+```
+sudo apt install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev libelf-dev vim
+```
 ## Getting kernel source
 ### Fetching sources
 ```
@@ -23,5 +27,8 @@ cp /boot/config-`uname -r`* .config
 ```
 make defconfig
 ```
-
+### Manually configure kernel
+```
+make menuconfig
+```
 
