@@ -31,4 +31,24 @@ make defconfig
 ```
 make menuconfig
 ```
-
+## Compile choosen kernel version
+Compile:
+```
+make
+```
+Compile with X cores:
+```
+make -jX
+```
+## Installing kernel
+```
+sudo make modules_install install
+```
+## Adding new kernel to grub2
+```
+sudo update-grub2
+```
+## Creating new initial ram disk for new kernel
+```
+sudo update-initramfs -c -k 6.5.6
+```
